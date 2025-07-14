@@ -18,16 +18,20 @@ Les modèles utilisés sont:
   
   4. Classification du sentiment de la transcription pour les modalités "positif", "négaltif" et "neutre"
 
-***Pipeline***
+### Pipeline
 
-audio.wav (voix client)
-    ↓
-[Wav2Vec2] → Transcription texte
-    ↓
-[BERT Sentiment] → Analyse du sentiment
-    ↓
-Classification : "positif", "neutre", "négatif"
+audio.wav (voix client)  →  [Wav2Vec2] Transcription texte  → [BERT Sentiment] Analyse du sentiment  →   Classification : "positif", "neutre", "négatif"
 
 
+### Installation
 
+```
+git clone 
+cd DL_project
+```
 
+Creer environnement virtuel 
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
