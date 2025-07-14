@@ -44,6 +44,7 @@ Lancer Gradio
 ```
 python interface.py
 ```
+App disponible au http://127.0.0.1:7861 
 
 API REST
 ```
