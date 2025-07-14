@@ -1,5 +1,4 @@
-# DL_project
-Détection Automatique de Sentiment dans des Appels Vocaux à l’aide de Wav2Vec 2.0 et BERT
+# Détection Automatique de Sentiment dans des Appels Vocaux à l’aide de Wav2Vec 2.0 et BERT
 
 Ce projet propose un pipeline intelligent qui transcrit un appel vocal et déduit le sentiment du locuteur (positif, neutre ou négatif), 
 en combinant un modèle de transcription audio (`Wav2Vec2`) et un modèle de NLP (BERT).
@@ -26,7 +25,7 @@ audio.wav (voix client)  →  [Wav2Vec2] Transcription texte  → [BERT Sentimen
 ### Installation
 
 ```
-git clone 
+git clone https://github.com/Maryemt/DL_project.git
 cd DL_project
 ```
 
@@ -34,4 +33,19 @@ Creer environnement virtuel
 ```
 python3 -m venv .venv
 source .venv/bin/activate
+```
+
+Installer les dependances 
+```
+pip install -r required.txt
+```
+
+Lancer Gradio 
+```
+python gradio.py
+```
+
+API REST
+```
+uvicorn main:app --reload
 ```
