@@ -18,4 +18,16 @@ Les modèles utilisés sont:
   
   4. Classification du sentiment de la transcription pour les modalités "positif", "négaltif" et "neutre"
 
+***Pipeline***
+
+audio.wav (voix client)
+    ↓
+[Wav2Vec2] → Transcription texte
+    ↓
+[BERT Sentiment] → Analyse du sentiment
+    ↓
+Classification : "positif", "neutre", "négatif"
+
+
+
 
