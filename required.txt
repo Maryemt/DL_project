@@ -1,0 +1,7 @@
+transformers>=4.30
+torch
+torchaudio
+librosa
+gradio
+fastapi
+uvicorn
