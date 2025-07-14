@@ -42,7 +42,7 @@ pip install -r required.txt
 
 Lancer Gradio 
 ```
-python gradio.py
+python interface.py
 ```
 
 API REST
